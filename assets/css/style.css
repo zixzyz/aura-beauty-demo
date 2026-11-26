@@ -3865,12 +3865,20 @@ p {
     display: inline;
   }
 
+  .h1-hyphen::after {
+    content: "-";
+  }
+
   .h1-break {
     display: block;
   }
 
   .legal-hyphen {
     display: inline;
+  }
+
+  .legal-hyphen::after {
+    content: "-";
   }
 
   .legal-break {
