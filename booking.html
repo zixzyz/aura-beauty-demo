@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Онлайн-запись — AURA</title>
+  <meta name="description" content="Онлайн-запись в клинику косметологии AURA: выберите услуги, дату, время и оставьте контакты.">
+  <meta name="theme-color" content="#f2ebde">
+  <meta property="og:title" content="Онлайн-запись — AURA">
+  <meta property="og:description" content="Выберите услугу, дату и время. Администратор подтвердит запись.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zixzyz.github.io/aura-beauty-demo/assets/og-image-2026.jpg">
+  <link rel="canonical" href="https://zixzyz.github.io/aura-beauty-demo/booking.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261127">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=20261127">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/fonts/Prata-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261127">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body data-telegram="https://t.me/aura_beauty_demo">
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 3 3 10.5l6.2 2.6L21 3ZM21 3l-6.9 18-4.9-7.9M9.2 13.1 21 3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h-2A1.5 1.5 0 0 0 3 4.5C3 13.6 10.4 21 19.5 21a1.5 1.5 0 0 0 1.5-1.5v-2l-4-1.5-1.8 2a15.4 15.4 0 0 1-8.2-8.2l2-1.8L6.5 3Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Москва · Пречистенка, 20</span>
+      <span class="topbar__item"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Ежедневно 10:00–21:00</span>
+      <a class="topbar__phone" href="tel:+79991234567">+7 (999) 123-45-67</a>
+      <a class="topbar__link" href="https://t.me/aura_beauty_demo" target="_blank" rel="noopener">Telegram</a>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner header__inner--booking">
+      <a class="logo" href="index.html" aria-label="AURA — на главную"><span class="logo__mark">AURA</span><span class="logo__sub">клиника косметологии</span></a>
+      <a class="header__back" href="index.html"><svg class="icon icon--back" aria-hidden="true"><use href="#i-arrow"/></svg><span>На главную</span></a>
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a class="btn btn--sm btn--ghost" href="https://t.me/aura_beauty_demo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg> Помощь</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="booking-page">
+
+    <section class="booking-hero">
+      <div class="container">
+        <div class="booking-hero__grid">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__index">01</span> Онлайн-запись</p>
+            <h1>Запись<br>на процедуру</h1>
+          </div>
+          <p class="booking-hero__lead">Выберите услуги, дату и удобное время. Оставьте контакты — администратор подтвердит запись и ответит на вопросы.</p>
+        </div>
+        <ol class="steps" id="steps">
+          <li class="step is-active" data-step="1"><span class="step__num">01</span><span class="step__label">Услуги</span></li>
+          <li class="step" data-step="2"><span class="step__num">02</span><span class="step__label">Время</span></li>
+          <li class="step" data-step="3"><span class="step__num">03</span><span class="step__label">Контакты</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="container">
+        <p class="b-note b-note--top">Для онлайн-записи включите JavaScript или позвоните по телефону <a href="tel:+79991234567">+7 (999) 123-45-67</a>.</p>
+      </div>
+    </noscript>
+
+    <section class="booking-section">
+      <div class="container booking-layout" id="bookingLayout">
+        <div class="booking-main">
+
+          <section class="bstep is-active" data-step="1" aria-labelledby="step1Title">
+            <div class="bstep__head">
+              <span class="bstep__num">01</span>
+              <div><h2 id="step1Title">Выберите услуги</h2><p>Можно выбрать несколько услуг — итоговая стоимость появится справа.</p></div>
+            </div>
+            <div class="btabs" id="categoryTabs" role="group" aria-label="Категории услуг"></div>
+            <div class="service-picker" id="servicePicker"></div>
+            <p class="b-note">Нужна помощь с выбором? <a href="tel:+79991234567">Позвоните</a> или <a href="https://t.me/aura_beauty_demo" target="_blank" rel="noopener">напишите в Telegram</a>.</p>
+          </section>
+
+          <section class="bstep" data-step="2" aria-labelledby="step2Title" hidden>
+            <div class="bstep__head">
+              <span class="bstep__num">02</span>
+              <div><h2 id="step2Title">Выберите время</h2><p>Свободные слоты обновляются администратором при подтверждении.</p></div>
+            </div>
+            <div class="bgroup">
+              <h3 class="bgroup__title">Специалист</h3>
+              <div class="specialists" id="specialists"></div>
+            </div>
+            <div class="bgroup">
+              <h3 class="bgroup__title">Дата</h3>
+              <div class="date-strip" id="dateStrip"></div>
+            </div>
+            <div class="bgroup">
+              <h3 class="bgroup__title">Время</h3>
+              <div class="time-grid" id="timeGrid" aria-live="polite"></div>
+              <p class="b-hint" id="timeHint">Выберите дату и время.</p>
+            </div>
+            <button class="back-link" type="button" data-back="1"><svg class="icon icon--back" aria-hidden="true"><use href="#i-arrow"/></svg> Назад к услугам</button>
+          </section>
+
+          <section class="bstep" data-step="3" aria-labelledby="step3Title" hidden>
+            <div class="bstep__head">
+              <span class="bstep__num">03</span>
+              <div><h2 id="step3Title">Ваши контакты</h2><p>Администратор свяжется с вами для подтверждения записи.</p></div>
+            </div>
+            <form class="bform" id="bookingForm" novalidate>
+              <div class="field" id="nameField">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="60" aria-describedby="nameError" required>
+                <span class="field__error" id="nameError" role="alert">Укажите имя</span>
+              </div>
+              <div class="field" id="phoneField">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" maxlength="18" aria-describedby="phoneError" required>
+                <span class="field__error" id="phoneError" role="alert">Введите номер телефона полностью</span>
+              </div>
+              <div class="field field--full">
+                <label for="comment">Комментарий <span>необязательно</span></label>
+                <textarea id="comment" name="comment" rows="3" maxlength="500" placeholder="Например, чувствительная кожа"></textarea>
+              </div>
+              <label class="consent" id="consentLabel">
+                <input type="checkbox" id="consent" name="consent" aria-describedby="consentError" required>
+                <span class="consent__box" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+                <span>Согласен(а) с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a> и обработкой персональных данных</span>
+              </label>
+              <span class="consent__error" id="consentError" role="alert">Подтвердите согласие</span>
+              <button class="btn btn--full bform__submit" type="submit">Подтвердить запись <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <p class="b-note">Демо-режим: данные не отправляются на сервер. На следующем шаге сформируется сообщение в Telegram.</p>
+            </form>
+            <button class="back-link" type="button" data-back="2"><svg class="icon icon--back" aria-hidden="true"><use href="#i-arrow"/></svg> Назад к времени</button>
+          </section>
+
+          <section class="bstep" data-step="4" aria-labelledby="step4Title" aria-live="polite" hidden>
+            <div class="success-card">
+              <span class="success-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+              <p class="eyebrow"><span class="eyebrow__index">Готово</span></p>
+              <h2 id="step4Title">Заявка сформирована</h2>
+              <p>Отправьте её в Telegram — откроется чат с администратором, где уже будет ваше сообщение. Или позвоните нам.</p>
+              <div class="success-card__summary" id="successSummary"></div>
+              <div class="success-card__actions">
+                <a class="btn" id="successTelegram" href="https://t.me/aura_beauty_demo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg> Отправить в Telegram</a>
+                <a class="btn btn--ghost" href="tel:+79991234567"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Позвонить</a>
+              </div>
+              <a class="back-link" href="index.html">На главную</a>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="bsummary" id="bookingSummary" aria-label="Ваша запись">
+          <div class="bsummary__head"><h2>Ваша запись</h2><span id="summaryCount">0 услуг</span></div>
+          <div class="bsummary__services" id="summaryServices"><p class="bsummary__empty">Услуги не выбраны</p></div>
+          <div class="bsummary__line"><span>Итого</span><strong id="summaryTotal">0 ₽</strong></div>
+          <div class="bsummary__info" id="summaryInfo" hidden></div>
+          <p class="bsummary__note">Оплата на месте. Отмена визита — не позднее 24 часов.</p>
+          <button class="btn bsummary__next" id="summaryNext" type="button" disabled>Выбрать время <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="bsummary__demo">Демо: заявка формируется для Telegram</p>
+          <div class="bsummary__mobile"><span id="mobileCount">0 услуг</span><strong id="mobileTotal">0 ₽</strong></div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo logo--footer" href="index.html"><span class="logo__mark">AURA</span><span class="logo__sub">клиника косметологии</span></a>
+          <p>Клиника косметологии на Пречистенке. Приём по записи, врачи с медицинским образованием.</p>
+        </div>
+        <div class="footer__col"><h3>Клиника</h3><ul><li><a href="index.html#services">Услуги</a></li><li><a href="index.html#about">О клинике</a></li><li><a href="index.html#team">Специалисты</a></li><li><a href="index.html#reviews">Отзывы</a></li></ul></div>
+        <div class="footer__col"><h3>Запись</h3><ul><li><a href="booking.html">Онлайн-запись</a></li><li><a href="index.html#offers">Акции</a></li><li><a href="index.html#gift">Сертификаты</a></li><li><a href="index.html#contacts">Контакты</a></li></ul></div>
+        <div class="footer__col"><h3>Связаться</h3><ul><li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li><li><a href="mailto:hello@aura-demo.ru">hello@aura-demo.ru</a></li><li><a href="https://t.me/aura_beauty_demo" target="_blank" rel="noopener">Telegram</a></li><li><span>Москва, Пречистенка, 20, стр. 1</span></li><li><span>Ежедневно 10:00–21:00</span></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__legal"><span>© <span id="year">2026</span> AURA. Все права защищены.</span><a href="privacy.html">Политика конфиденциальности</a><span>Имеются противопоказания. Необходима консультация специалиста.</span></div>
+        <span class="footer__demo">Демо-версия</span>
+      </div>
+      <p class="footer__disclaimer">Демонстрационный проект. Информация, цены и контактные данные приведены для примера.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=20261127"></script>
+  <script src="assets/js/booking.js?v=20261127"></script>
+</body>
+</html>
