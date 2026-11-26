@@ -1,0 +1,8 @@
+node_modules/
+.vercel/
+.playwright-mcp/
+.DS_Store
+Thumbs.db
+*.log
+axe.min.js
+qa-*.png
