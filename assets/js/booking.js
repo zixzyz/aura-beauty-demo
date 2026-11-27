@@ -9,76 +9,101 @@
     {
       id: "consultation",
       cat: "consultation",
-      title: "Консультация косметолога",
-      desc: "Осмотр кожи, план ухода и подбор процедуры",
+      title: "Консультация по услугам",
+      desc: "Подбор услуги, мастера и плана ухода",
       duration: 30,
       price: 0,
       oldPrice: 2500
     },
     {
+      id: "hair",
+      cat: "hair",
+      title: "Парикмахерский зал",
+      desc: "Стрижка, укладка и уход за волосами",
+      duration: 60,
+      price: 3500
+    },
+    {
+      id: "coloring",
+      cat: "hair",
+      title: "Окрашивание и уход",
+      desc: "Окрашивание в один тон и восстановление волос",
+      duration: 120,
+      price: 9900,
+      oldPrice: 12500
+    },
+    {
+      id: "nails",
+      cat: "nails",
+      title: "Маникюр и педикюр",
+      desc: "Комплекс: гель-лак и уход за кутикулой",
+      duration: 90,
+      price: 5900,
+      oldPrice: 7600
+    },
+    {
+      id: "manicure",
+      cat: "nails",
+      title: "Маникюр с гель-лаком",
+      desc: "Аппаратный маникюр и покрытие",
+      duration: 90,
+      price: 3200
+    },
+    {
+      id: "brows",
+      cat: "brows",
+      title: "Брови и ресницы",
+      desc: "Коррекция, окрашивание и ламинирование",
+      duration: 60,
+      price: 1800
+    },
+    {
+      id: "lash",
+      cat: "brows",
+      title: "Ламинирование ресниц",
+      desc: "Уход и выразительный изгиб",
+      duration: 60,
+      price: 3900
+    },
+    {
+      id: "cosmetology",
+      cat: "cosmetology",
+      title: "Косметология",
+      desc: "Чистки, пилинги, инъекции и аппаратные методики",
+      duration: 60,
+      price: 3800
+    },
+    {
       id: "cleaning",
-      cat: "face",
+      cat: "cosmetology",
       title: "Чистка лица",
       desc: "Комбинированная или механическая чистка",
       duration: 60,
       price: 5500
     },
     {
-      id: "peeling",
-      cat: "face",
-      title: "Пилинг",
-      desc: "Энзимный или кислотный пилинг",
-      duration: 45,
-      price: 4800
-    },
-    {
-      id: "care",
-      cat: "face",
-      title: "Уход для лица",
-      desc: "Увлажнение, питание и восстановление кожи",
-      duration: 60,
-      price: 4200
-    },
-    {
       id: "injection",
-      cat: "injection",
+      cat: "cosmetology",
       title: "Инъекционная косметология",
-      desc: "Биоревитализация, ботулинотерапия, контурная пластика",
+      desc: "Биоревитализация и ботулинотерапия",
       duration: 60,
       price: 6900
     },
     {
-      id: "biorev",
-      cat: "injection",
-      title: "Биоревитализация",
-      desc: "Препараты на основе гиалуроновой кислоты",
+      id: "makeup",
+      cat: "makeup",
+      title: "Макияж",
+      desc: "Дневной, вечерний или свадебный образ",
       duration: 60,
-      price: 12900
+      price: 4500
     },
     {
-      id: "laser",
-      cat: "laser",
-      title: "Лазерная эпиляция · 6 зон",
-      desc: "Диодный лазер с охлаждением",
-      duration: 60,
-      price: 4900,
-      oldPrice: 7800
-    },
-    {
-      id: "rf",
-      cat: "hardware",
-      title: "RF-лифтинг",
-      desc: "Аппаратная методика для тонуса кожи",
-      duration: 60,
-      price: 7500
-    },
-    {
-      id: "hardware",
-      cat: "hardware",
-      title: "Аппаратная косметология",
-      desc: "Микротоки и аппаратные методики",
-      duration: 45,
-      price: 3800
+      id: "makeup-styling",
+      cat: "makeup",
+      title: "Макияж и укладка",
+      desc: "Полный образ с укладкой",
+      duration: 90,
+      price: 6500
     },
     {
       id: "certificate",
@@ -93,18 +118,19 @@
   const categories = [
     { id: "all", label: "Все" },
     { id: "consultation", label: "Консультации" },
-    { id: "face", label: "Лицо" },
-    { id: "injection", label: "Инъекции" },
-    { id: "hardware", label: "Аппаратные" },
-    { id: "laser", label: "Эпиляция" },
+    { id: "hair", label: "Волосы" },
+    { id: "nails", label: "Ногти" },
+    { id: "brows", label: "Брови и ресницы" },
+    { id: "cosmetology", label: "Косметология" },
+    { id: "makeup", label: "Макияж" },
     { id: "gift", label: "Сертификаты" }
   ];
 
   const specialists = [
     { id: "any", label: "Любой специалист" },
-    { id: "anna", label: "Анна Верещагина" },
-    { id: "maria", label: "Мария Соколова" },
-    { id: "elena", label: "Елена Смирнова" }
+    { id: "anna", label: "Анна Верещагина · косметолог" },
+    { id: "maria", label: "Мария Соколова · стилист" },
+    { id: "elena", label: "Елена Смирнова · визажист" }
   ];
 
   const weekdays = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
@@ -467,7 +493,11 @@
     }
 
     if (step === 3) {
-      window.setTimeout(() => nameInput.focus({ preventScroll: true }), 420);
+      window.setTimeout(() => {
+        if (!form.contains(document.activeElement)) {
+          nameInput.focus({ preventScroll: true });
+        }
+      }, 420);
     }
 
     void previous;
@@ -515,6 +545,14 @@
     phoneInput.value = formatPhone(phoneInput.value);
     phoneField.classList.remove("is-invalid");
     phoneInput.removeAttribute("aria-invalid");
+  });
+
+  phoneInput.addEventListener("paste", (event) => {
+    const text = (event.clipboardData || window.clipboardData).getData("text");
+    if (!text) return;
+    event.preventDefault();
+    phoneInput.value = text;
+    phoneInput.dispatchEvent(new Event("input", { bubbles: true }));
   });
 
   phoneInput.addEventListener("blur", () => {
